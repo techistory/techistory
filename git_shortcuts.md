@@ -1,3 +1,12 @@
+Git is like SCLM with a lot more bells and whistles.
+
+- SCLM DEV is the untracked (by Git) local computer changes.
+- SCLM INT is the Git staging area (where ADDed stuff lives before commit)
+- SCLM SYS lives both locally and remotely (on GitHub). It is the history of changes, and is synced back and forth along with PRD when PUSH and PULL are executed.
+- SCLM PRD lives both locally and remotely (on GitHub). It is the commited code. PUSH and PULL sync this to GitHub or locally respectively.
+
+Note, PULL (updating local from newer GitHub code) should rarely be used. Better to make all changes locally and keep the GitHub repo updated with repeated PUSHes.
+
 | Command                             | Description                                                                    |
 | :---------------------------------- | :----------------------------------------------------------------------------- |
 | git status                          | Get repo status                                                                |
