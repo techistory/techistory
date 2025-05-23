@@ -1,8 +1,10 @@
-- 👋 Hi, I’m @techistory 
+- 👋 Hi, I’m @techistory. If you've found this repository, I've probably told to come here as a starting point to one of my few public repos. Most of my repos are private and are just backups of configuration files, scripts and other stuff that I use to fix things in my "homelab" in case something breaks. Hence the name techistory.
+
+The few public repos I maintain are mostly just a collections of useful scripts and the like that I've stolen or cobbled together over time.
 
 <!---
 techistory/techistory is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
 
-Updated 4/1/20
+Updated 05/23/2025
