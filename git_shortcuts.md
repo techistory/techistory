@@ -1,13 +1,15 @@
-git status get repo status
+| Command    | Description     |
+| :--------- | :-------------- |
+| git status | get repo status |
 
-[make changes]
+| [make changes] |
 
-git add . stage changes before commit
+| git add . | stage changes before commit |
 
-git commit -m [comment]
+| git commit -m [comment] |
 
-git push origin main
+| git push origin main |
 
-[make changes on github]
+| [make changes on github] |
 
-git pull origin main
+| git pull origin main |
