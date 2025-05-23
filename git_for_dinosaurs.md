@@ -1,4 +1,6 @@
-Git is like SCLM with a lot more bells and whistles. Note, SYS is the key and where all the action is. In Git, the "SYS" entity is an exquisitly versioned code museusm that maintains a complete copy of every version of every module in the repository. The Git equivalent of PRD is merely the visible top layer of the archealogical history of the code this in the multi-versioned SYS.
+Git is like SCLM with a lot more bells and whistles. Note, SCLM SYS is the key metaphor and where all the action is. In Git, the "SYS" entity is an exquisitly versioned code museum that maintains a complete copy of every version of every module in a given branch of the repository. The Git equivalent of SCLM PRD is merely the visible top layer (most recent version) of the archealogical history of the code in that (SYS) branch. Each branch is a separate SCLM SYS/PRD.
+
+Think of a Git branch as a push-down stack where the most recently added element is "PRD" and the entire stack (including PRD) is "SYS".
 
 - SCLM DEV - Untracked (by Git) local computer changes. Is "empty" when there are no changes compared to "PRD".
 - SCLM INT - Git staging area (where ADDed changed stuff sits before commit).
