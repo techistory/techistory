@@ -4,7 +4,7 @@ Think of a Git branch as a push-down stack where the most recently added element
 
 - SCLM DEV - Untracked (by Git) local computer changes. Is "empty" when there are no changes compared to "PRD".
 - SCLM INT - Git staging area (where ADDed changed stuff sits before commit).
-- SCLM SYS - Lives both locally (on PC) and remotely (on GitHub). It is the full history of all versions of the code, and is updated by "git commit" (on PC) or pressing the "Commit Changes" button on GitHub after making changes there. (Syncing between PC and GitHub with push or pull still needs to be done)
+- SCLM SYS - Lives both locally (on PC) and remotely (on GitHub). It is the full history of all versions of the code in the current branch, and is updated by "git commit" (on PC) or pressing the "Commit Changes" button on GitHub after making changes there. (Syncing between PC and GitHub with push or pull still needs to be done).
 - SCLM PRD - There is no explicit Git entity equivalent to PRD. But it can be thought of as the most recent version of code visible in SYS. It is not really a separate entity like in SCLM, but merely the most recently commited stuff. It is the tip of the iceberg that we think of as "The Branch" (main or otherwise).
 
 Note, PULL (updating local from newer GitHub code) should rarely be used. Better to make all changes locally and keep the GitHub repo updated with repeated PUSHes.
@@ -19,6 +19,8 @@ Note, PULL (updating local from newer GitHub code) should rarely be used. Better
 | git push [origin] [_branch_]        | Push SYS to PRD (GitHub)                                                                            |
 | [_make changes on github_]          | Like editing directly in PRD (GitHub)                                                               |
 | [_commit changes button on GitHub_] | Commit updates branch and logs change history (think of SYS as the change log)                      |
-| git pull [origin] [_branch_]        | Pull PRD back to DEV (local computer)                                                               |
-|                                     | Pulling from main syncs local "DEV" and "SYS" (the change history) from GitHub                      |
+| git pull [origin] [_branch_]        | Pull PRD back to SYS/PRD (current branch copy on local computer)                                    |
+|                                     | Pulling from GitHub syncs local repo with remote repo                                               |
 |                                     | Reminder: pushing is preferable to pulling (because of the consistency of working on only one side) |
+
+- origin is an alias for the GitHub URL (or SSH session partner) for this user (e.g. techhistory)
