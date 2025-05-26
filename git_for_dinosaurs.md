@@ -15,6 +15,7 @@ Note, PULL (updating local from newer GitHub code) should rarely be used. Better
 | git branch -a                                              | List all branches in the repository. Current branch is starred.                                     |
 | [_make changes locally_]                                   | Like editing in SCLM DEV (local computer)                                                           |
 | git add .                                                  | Push all of DEV to INT (on the current branch) (local computer)                                     |
+| git diff [--staged]                                        | See diff between DEV and INT or INT and SYS (--staged)                                              |
 | git commit -m [_comment_]                                  | Push INT to SYS (on the current branch) (local computer)                                            |
 |                                                            | Updates branch and logs change history (think of SYS as the change log)                             |
 | git push [origin] [_branch_]                               | Push SYS to PRD (GitHub)                                                                            |
