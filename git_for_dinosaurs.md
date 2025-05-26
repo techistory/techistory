@@ -26,7 +26,8 @@ Note, PULL (updating local from newer GitHub code) should rarely be used. Better
 |                                                            | Reminder: pushing is preferable to pulling (because of the consistency of working on only one side) |
 |                                                            |                                                                                                     |
 | git remote -v                                              | Display current remote repository(s)                                                                |
-| git remote add _name_ git@github.com:techistory/_name_.git | Add repository alias                                                                                |
-| git remove _name_                                          | Remove repository alias                                                                             |
+| git remote add _name_ git@github.com:techistory/_name_.git | Add repository alias (git default is ORIGIN, but _techistory_ or _scripts_ is more specifc)         |
+|                                                            | ORIGIN is ok because each ".git" control area is independent of each other.                         |
+| git remote remove _name_                                   | Remove repository alias                                                                             |
 
 - origin is an alias for the GitHub URL (or SSH session partner) for this user (e.g. techhistory)
