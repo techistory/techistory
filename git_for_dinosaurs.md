@@ -9,18 +9,22 @@ Think of a Git branch as a push-down stack where the most recently added element
 
 Note, PULL (updating local from newer GitHub code) should rarely be used. Better to make all changes locally and keep the GitHub repo updated with repeated PUSHes.
 
-| Command                             | Description                                                                                         |
-| :---------------------------------- | :-------------------------------------------------------------------------------------------------- |
-| git status                          | Get repo status                                                                                     |
-| [_make changes locally_]            | Like editing in SCLM DEV (local computer)                                                           |
-| git add .                           | Push DEV to INT (on the current branch) (local computer)                                            |
-| git commit -m [_comment_]           | Push INT to SYS (on the current branch) (local computer)                                            |
-|                                     | Updates branch and logs change history (think of SYS as the change log)                             |
-| git push [origin] [_branch_]        | Push SYS to PRD (GitHub)                                                                            |
-| [_make changes on github_]          | Like editing directly in PRD (GitHub)                                                               |
-| [_commit changes button on GitHub_] | Commit updates branch and logs change history (think of SYS as the change log)                      |
-| git pull [origin] [_branch_]        | Pull PRD back to SYS/PRD (current branch copy on local computer)                                    |
-|                                     | Pulling from GitHub syncs local repo with remote repo                                               |
-|                                     | Reminder: pushing is preferable to pulling (because of the consistency of working on only one side) |
+| Command                                                      | Description                                                                                         |
+| :----------------------------------------------------------- | :-------------------------------------------------------------------------------------------------- |
+| git status                                                   | Get repo status                                                                                     |
+| [_make changes locally_]                                     | Like editing in SCLM DEV (local computer)                                                           |
+| git add .                                                    | Push DEV to INT (on the current branch) (local computer)                                            |
+| git commit -m [_comment_]                                    | Push INT to SYS (on the current branch) (local computer)                                            |
+|                                                              | Updates branch and logs change history (think of SYS as the change log)                             |
+| git push [origin] [_branch_]                                 | Push SYS to PRD (GitHub)                                                                            |
+| [_make changes on github_]                                   | Like editing directly in PRD (GitHub)                                                               |
+| [_commit changes button on GitHub_]                          | Commit updates branch and logs change history (think of SYS as the change log)                      |
+| git pull [origin] [_branch_]                                 | Pull PRD back to SYS/PRD (current branch copy on local computer)                                    |
+|                                                              | Pulling from GitHub syncs local repo with remote repo                                               |
+|                                                              | Reminder: pushing is preferable to pulling (because of the consistency of working on only one side) |
+|                                                              |                                                                                                     |
+| git remote -v                                                | Display current remote repository(s)                                                                |
+| git remote add _name_ //git#github.com:techistory/_name_.git | Add repository alias                                                                                |
+| git remove _name_                                            | Remove repository alias                                                                             |
 
 - origin is an alias for the GitHub URL (or SSH session partner) for this user (e.g. techhistory)
