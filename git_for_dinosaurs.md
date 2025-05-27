@@ -11,6 +11,17 @@ Note, PULL (updating local from newer GitHub code) should rarely be used. Better
 
 | Command                                                    | Description                                                                                         |
 | :--------------------------------------------------------- | :-------------------------------------------------------------------------------------------------- |
+| git init                                                   | Start new repo locally in new techistory subdirectory _name_                                        |
+| git add README.md                                          | Create and add initial readme locally (if no README.md on server)                                   |
+| git commit -m 'Initial commit' [--allow-empty]             | Initial commit (use --allow-empty if README.md pre-exists on server)                                |
+| git remote add origin git@github.com:techistory/_name_.git | Connect this local repo to server                                                                   |
+| git push -u origin main                                    | Initial push and --set-upstream (-u)                                                                |
+| git pull --rebase origin main                              | Pull in case need to reconcile divergent branches                                                   |
+|                                                            |                                                                                                     |
+|                                                            |                                                                                                     |
+|                                                            |                                                                                                     |
+|                                                            |                                                                                                     |
+| git commit -m '(initial empty commit)' --allow-empty       | Initial commit of nothing - maybe not the best idea                                                 |
 | git status                                                 | Get repo status                                                                                     |
 | git branch -a                                              | List all branches in the repository. Current branch is starred.                                     |
 | [_make changes locally_]                                   | Like editing in SCLM DEV (local computer)                                                           |
@@ -18,7 +29,7 @@ Note, PULL (updating local from newer GitHub code) should rarely be used. Better
 | git diff [--staged]                                        | See diff between DEV and INT or INT and SYS (--staged)                                              |
 | git commit -m [_comment_]                                  | Push INT to SYS (on the current branch) (local computer)                                            |
 |                                                            | Updates branch and logs change history (think of SYS as the change log)                             |
-| git push [origin] [_branch_]                               | Push SYS to PRD (GitHub)                                                                            |
+| git push [**origin**] [_branch_]                           | Push SYS to PRD (GitHub)                                                                            |
 | [_make changes on github_]                                 | Like editing directly in PRD (GitHub)                                                               |
 | [_commit changes button on GitHub_]                        | Commit updates branch and logs change history (think of SYS as the change log)                      |
 | git pull [origin] [_branch_]                               | Pull PRD back to SYS/PRD (current branch copy on local computer)                                    |
