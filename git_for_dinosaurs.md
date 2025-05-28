@@ -17,7 +17,7 @@ Note, PULL (updating local from newer GitHub code) should rarely be used. Better
 | git remote add origin git@github.com:techistory/_name_.git | Connect this local repo to server                                                                   |
 | git push -u origin main                                    | Initial push and --set-upstream (-u)                                                                |
 | git pull --rebase origin main                              | Pull in case need to reconcile divergent branches                                                   |
-|                                                            |                                                                                                     |
+| git config --replace-all init.defaultBranch main           | Change default branch name to main (to match GitHub)                                                |
 |                                                            |                                                                                                     |
 |                                                            |                                                                                                     |
 |                                                            |                                                                                                     |
