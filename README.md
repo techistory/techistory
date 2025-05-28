@@ -4,6 +4,10 @@
 
 - The **git_for_dinosaurs.md** file is in informal guide for myself (and maybe others) to using git - from a mainframer's perspective. Most mainframe developers are familiar with IBM's SCLM version control software. Git is explained in SCLM terms.
 
+My other public repos:
+
+[scripts](https://github.com/techistory/scripts)
+
 <!---
 techistory/techistory is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
