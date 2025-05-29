@@ -1,4 +1,4 @@
-- If you've found this repository, I've probably told you to come here for one of my few public repos. Most of my repos are private and are just backups of configuration files, scripts and other stuff that I use to fix things in my "homelab" in case something breaks. Hence the name techistory.
+- If you've found this repository, I've probably told you to come here for one of my few very modest public repos. Most of my repos are private and are just backups of configuration files, scripts and other stuff that I use to fix things in my "homelab" in case something breaks. Hence the name techistory.
 
 - The few public repos that I maintain are mostly just collections of trinkets that I've stolen or cobbled together over the years that I think might be of interest to others.
 
